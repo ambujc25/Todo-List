@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="main-content ">
+                <div class="left-content">
+                    <h3 class="heading">Projects</h3>
+
+                    <div class="projects">
+                        <ul class="listProjects">
+                        </ul>
+                    </div>
+
+                    <div class="addProject">
+                        <button class = "addProjectButton">Add Project</button>
+                    </div>
+
+                </div>
+        
+                <div class="right-content">
+                    <h3 class="heading">Tasks</h3>
+
+                    <div class="tasks">
+                        <ul class="listTasks">
+                            <div class="fullTask">
+                                <li class="task">
+                                    <p class="taskName">TaskOne</p> 
+                                    <span class = "close hidden">X</span>
+                                </li>
+
+                                <div class="fullTaskDesc">
+                                    <div class="taskLeftSide">
+                                        <div class="taskDesc">
+                                            <h3 class = "taskHeading">
+                                                Description
+                                            </h3>
+                                            <p class = "taskDescText description">
+                                                This task is asldf laskdfj sadjfl asdfasfd sadgasfgdsf
+                                            </p>
+                                        </div>
+
+                                        <div class="taskDesc">
+                                            <h3 class = "taskHeading">
+                                                Date
+                                            </h3>
+                                            <p class = "taskDescText">
+                                                12/4/7
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="taskRightSide">
+                                        <div class="taskDesc">
+                                            <h3 class = "taskHeading">
+                                                Time
+                                            </h3>
+                                            <p class = "taskDescText">
+                                                12:30
+                                            </p>
+                                        </div>
+
+                                        <div class="taskDesc">
+                                            <h3 class = "taskHeading">
+                                                Priority    
+                                            </h3>
+                                            <p class = "taskDescText">
+                                                High
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="addTask">
+                        <button class="addTaskButton">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="addProjectWindow hidden">
+                <p class="closeProject">x</p>
+                <h3 class="title">Add Project</h3>
+                <h4 class="projectName">Name</h4>
+                <input id = "nameInput" type="text">
+                <button class = "projectSubmit">Add</button>
+            </div>
+
+            <div class="addTaskWindow hidden">
+                <p class="closeTask">x</p>
+                <h3 class="title tasktitle">Add Task</h3>
+                <h4 class="taskName">Name</h4>
+                <input id = "taskNameInput" type="text">
+
+                <h4 class="taskName">Description</h4>
+                <input id = "descriptionInput" type="text">
+
+                <h4 class="taskName">Date</h4>
+                <input id = "dateInput" type="date">
+
+                <h4 class="taskName">Time</h4>
+                <input id = "timeInput" type="time">
+
+                <h4 class="taskName">Priority</h4>
+                <div class="priorityRadio">
+                    <input id = "high" type="radio" name="priority" value = "high">
+                    <label for="high">High</label>
+                    <input id = "medium" type="radio" name="priority" value = "medium">
+                    <label for="medium">Medium</label>
+                    <input id = "low" type="radio" name="priority" value = "low">
+                    <label for="low">Low</label>
+                </div>
+                
+
+                <button class = "taskSubmit">Add</button>
+            </div>
+
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html
